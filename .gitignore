@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **/.DS_Store
 nbproject
 manifest.mf
@@ -6,3 +7,6 @@ build.xml
 .project
 .settings
 .idea/*
+=======
+.sass-cache
+>>>>>>> 67d30bd97d49a85d94455f6b2fd727e0ae6da084
