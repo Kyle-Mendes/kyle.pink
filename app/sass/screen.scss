@@ -1,0 +1,197 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import 'cover';
+
+.pink {
+	color: #FF72D9;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.hire-me {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	top: 0;
+	background: #CC0B45;
+	box-shadow:0px 2px 7px #000000;
+	z-index: 100;
+	-webkit-animation: slideDown 30s 30s 1 ease forwards;
+
+	&.dismissed {
+		-webkit-animation: slideUp 1.5s .2s 1 ease forwards;
+	}
+
+	@media all and (min-width: 960px) {
+		width: 20%;
+		max-width: 400px;
+		right: 30px;
+	}
+
+	a {
+		position: absolute;
+		left: 0; right: 0;
+	}
+
+	.dismiss-hire-me {
+		margin-right: .4em;
+	}
+}
+
+.navigation {
+
+	@media all and (min-width: 768px) {
+		padding-bottom: 50px;
+	}
+
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	background: #1FB4CC;
+
+	.inner {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.here-state {
+		position: absolute;
+		bottom: 0;
+		transition:         left 0.7s linear;
+		-webkit-transition: left 0.7s linear;
+		img {
+			width: 60px;
+		}
+	}
+	li {
+		display: inline-block;
+		/*width: 100px;*/
+		position: initial !important; //needed to get the here state to work
+		a {
+			transition: border-bottom .5s ease;
+			padding-bottom: 5px;
+		}
+	}
+
+}
+
+.masthead-brand {
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.nav-items {
+}
+
+.landing-container {
+	top: 75px;
+	position: relative;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-bottom: 200px;
+	text-align: center;
+}
+
+.about-container {
+	h3 {
+		width: 70%;
+		margin-right: 30%;
+		padding-left: .3em;
+		border-bottom: 1px solid #777;
+	}
+}
+
+.site-content {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: left;
+
+	h1 {
+		text-align: center;
+		margin-bottom: 1em;
+
+		small {
+			display: block;
+		}
+	}
+}
+
+
+.btn-default.custom {
+	background: none;
+	color: #fff;
+	&:hover {
+		background: #fff;
+		color: #1f1f1f;
+	}
+}
+
+blockquote {
+	border-left-color: #FF72D9;
+	footer {
+		color: #777;
+		a {
+			color: #777;
+			text-decoration: underline;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	cite {
+		font-style: italic;
+	}
+}
+
+.mastfoot {
+	position: relative;
+	bottom: 0; left: 0; right: 0; //centering on bottom of page
+	margin: 0 auto;
+}
+
+.social-widgets {
+	list-style: none;
+
+	li {
+		display: inline-block;
+		a {
+			padding-right: 1em;
+			opacity: .5;
+			&:hover {
+				opacity: 1;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// Animations
+@-webkit-keyframes slideDown {
+    0% { -webkit-transform: translateY(-50px); }
+    10%, 100% { -webkit-transform: translateY(0px); }
+}
+@-moz-keyframes slideDown {
+    0% { -moz-transform: translateY(-50px); }
+    10%, 100% { -moz-transform: translateY(0px); }
+}
+@keyframes slideDown {
+    0% { -moz-transform: translateY(-50px); }
+    10%, 100% { -moz-transform: translateY(0px); }
+}
+@-webkit-keyframes slideUp {
+    0% { -webkit-transform: translateY(0px); }
+    10%, 100% { -webkit-transform: translateY(-50px); }
+}
+@-moz-keyframes slideUp {
+    0% { -moz-transform: translateY(0px); }
+    10%, 100% { -moz-transform: translateY(-50px); }
+}
+@keyframes slideUp {
+    0% { -moz-transform: translateY(0px); }
+    10%, 100% { -moz-transform: translateY(-50px); }
+}

@@ -1,0 +1,12 @@
+<h1>Portfolio <small>it's okay to need convincing</small></h1>
+<div class="portfolio-container" ng-repeat="item in portfolio">
+	<div class="portfolio-item">
+		<h2><a href="{{item.link}}">{{item.title}}</a></h2>
+		<p>{{item.shortDescription}} </p>
+		<p ng-show="item.expanded">{{item.longDescription}}</p>
+			<button class="btn btn-md btn-default custom" ng-click="item.expanded=!item.expanded">
+				<span ng-show="item.expanded">Less</span>
+				<span ng-hide="item.expanded">More</span> information</button>
+	</div>
+</div>
+

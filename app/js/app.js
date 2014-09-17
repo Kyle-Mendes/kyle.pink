@@ -3,14 +3,17 @@
 
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [
-  'ngRoute',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives',
-  'myApp.controllers'
-]).
+		'ngRoute',
+		'myApp.filters',
+		'myApp.services',
+		'myApp.directives',
+		'myApp.controllers'
+		]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
-  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
-  $routeProvider.otherwise({redirectTo: '/view1'});
+	$routeProvider.when('/', {templateUrl: 'partials/landing.html', controller: 'LandingCtrl'});
+	$routeProvider.when('/portfolio', {templateUrl: 'partials/portfolio.html', controller: 'PortfolioCtrl'});
+	$routeProvider.when('/about', {templateUrl: 'partials/about.html', controller: 'AboutCtrl'});
+	$routeProvider.when('/contact', {templateUrl: 'partials/contact.html', controller: 'ContactCtrl'});
+
+	$routeProvider.otherwise({redirectTo: '/'});
 }]);
