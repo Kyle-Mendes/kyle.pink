@@ -5,6 +5,10 @@
 
 @import 'cover';
 
+p {
+	font-size: 1.1em;
+}
+
 .pink {
 	color: #FF72D9;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -63,7 +67,7 @@
 		transition:         left 0.7s linear;
 		-webkit-transition: left 0.7s linear;
 		img {
-			width: 60px;
+			width: 50px;
 		}
 	}
 	li {
@@ -103,12 +107,41 @@
 		padding-left: .3em;
 		border-bottom: 1px solid #777;
 	}
+	.bio-pic {
+		display: block;
+		width: 300px;
+		float: left; 
+		margin-right: 1em;
+		@media all and (max-width: 800px) {
+			/*float: none;*/
+			/*margin: 0 auto;*/
+			width: 200px;
+		}
+	}
+	.about-lead {
+	}
+	.about-content {
+		clear: both;
+		padding-top: 1em;
+	}
+}
+
+.portfolio-container {
+	text-align: center;
 }
 
 .site-content {
 	max-width: 800px;
 	margin: 0 auto;
 	text-align: left;
+	padding: 0 1em;
+
+	a {
+		color: #FF72D9;
+		&:hover {
+			color: #FF72D9;
+		}
+	}
 
 	h1 {
 		text-align: center;
