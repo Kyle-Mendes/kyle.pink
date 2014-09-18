@@ -23,7 +23,7 @@ angular.module('myApp.controllers', [])
 	  $scope.portfolio = [
 		  {
 			  title:'Todo It',
-			  link: 'http://kyle.pink/todo/app',
+			  link: 'http://todo.kyle.pink/',
 			  shortDescription: "Many people dive into Angular with some sort of todo app.  I wasn't so different.  But, after my first attempt, I tried again.  I refactored the code, added user authentication with Firebase, and learned a lot.",
 			  longDescription: "Lorem ipsum dolore. Lorem ipsum dolore. Lorem ipsum dolore. Lorem ipsum dolore.",
 			  expanded: false
