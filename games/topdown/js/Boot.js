@@ -15,7 +15,7 @@ TopDownGame.Boot.prototype = {
 		this.scale.pageAlignHorizontally = true;
 		this.scale.pageAlignVertically = true;
 
-		//screen size is set automatically
+		//screen size is set to be slightly zoomed in.
 		this.scale.setupScale(480, 480);
 
 		//adding the physics system
