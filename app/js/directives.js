@@ -17,11 +17,7 @@ angular.module('myApp.directives', [])
     function moveMarker(container, oldPos) {
         var newPos = container.find(currentSelector).position();
         var marker = container.find(markerSelector);
-      var item = container.find(currentSelector);
-      console.log(item);
-      console.log(item.position());
-      console.log(newPos);
-   
+        var item = container.find(currentSelector);
 
         var scale = ((!oldPos || (newPos.left > oldPos.left)) ? '-' : '') + '1';
         marker.css({
@@ -53,6 +49,12 @@ angular.module('myApp.directives', [])
 
             moveMarker(elem);
         }
+    };
+})
+.directive('topdownGame', function () {
+    return {
+        restrict: 'E',
+        templateUrl: 'games/topdown/index.html'
     };
 });
 
