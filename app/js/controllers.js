@@ -41,7 +41,6 @@ angular.module('myApp.controllers', [])
 		var divisor = 12;
 
 		var fraction = reduceFraction(remainder, divisor);
-		console.log("after", fraction);
 
 		$scope.fraction = fraction[0] + " / " + fraction[1];
 
