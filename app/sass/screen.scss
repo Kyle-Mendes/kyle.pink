@@ -110,7 +110,7 @@ p {
 	.bio-pic {
 		display: block;
 		width: 300px;
-		float: left; 
+		float: left;
 		margin-right: 1em;
 		@media all and (max-width: 800px) {
 			/*float: none;*/
@@ -200,6 +200,26 @@ blockquote {
 				text-decoration: none;
 			}
 		}
+	}
+}
+
+// Dozens
+
+.dozen-wrapper {
+	margin: 0 auto;
+	h1 {
+		font-size: 5em;
+		text-align: center;
+	}
+	.input {
+		text-align: center;
+	}
+	input {
+		color: #000;
+	}
+	.btn {
+		background: #1FB4CC;
+		background-image: #1FB4CC;
 	}
 }
 

@@ -6,7 +6,7 @@
  * Globals
  */
 /* Links */
-/* line 8, ../sass/_cover.scss */
+/* line 6, ../sass/_cover.scss */
 a,
 a:focus,
 a:hover {
@@ -14,7 +14,7 @@ a:hover {
 }
 
 /* Custom default button */
-/* line 15, ../sass/_cover.scss */
+/* line 13, ../sass/_cover.scss */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
@@ -28,7 +28,7 @@ a:hover {
 /*
  * Base structure
  */
-/* line 28, ../sass/_cover.scss */
+/* line 27, ../sass/_cover.scss */
 html,
 body {
   height: 100%;
@@ -102,7 +102,7 @@ body {
   border-bottom: 2px solid transparent;
 }
 
-/* line 85, ../sass/_cover.scss */
+/* line 84, ../sass/_cover.scss */
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
@@ -110,7 +110,7 @@ body {
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 92, ../sass/_cover.scss */
+/* line 90, ../sass/_cover.scss */
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
@@ -177,7 +177,7 @@ body {
   }
 
   /* Handle the widths */
-  /* line 151, ../sass/_cover.scss */
+  /* line 149, ../sass/_cover.scss */
   .masthead,
   .mastfoot,
   .cover-container {
@@ -186,7 +186,7 @@ body {
   }
 }
 @media (min-width: 992px) {
-  /* line 159, ../sass/_cover.scss */
+  /* line 157, ../sass/_cover.scss */
   .masthead,
   .mastfoot,
   .cover-container {
@@ -414,73 +414,73 @@ blockquote cite {
   text-decoration: none;
 }
 
+/* line 208, ../sass/screen.scss */
+.dozen-wrapper {
+  margin: 0 auto;
+}
+/* line 210, ../sass/screen.scss */
+.dozen-wrapper h1 {
+  font-size: 5em;
+  text-align: center;
+}
+/* line 214, ../sass/screen.scss */
+.dozen-wrapper .input {
+  text-align: center;
+}
+/* line 217, ../sass/screen.scss */
+.dozen-wrapper input {
+  color: #000;
+}
+/* line 220, ../sass/screen.scss */
+.dozen-wrapper .btn {
+  background: #1FB4CC;
+  background-image: #1FB4CC;
+}
+
 @-webkit-keyframes slideDown {
-  /* line 208, ../sass/screen.scss */
   0% {
     -webkit-transform: translateY(-50px);
   }
-
-  /* line 209, ../sass/screen.scss */
   10%, 100% {
     -webkit-transform: translateY(0px);
   }
 }
-
 @-moz-keyframes slideDown {
-  /* line 212, ../sass/screen.scss */
   0% {
     -moz-transform: translateY(-50px);
   }
-
-  /* line 213, ../sass/screen.scss */
   10%, 100% {
     -moz-transform: translateY(0px);
   }
 }
-
 @keyframes slideDown {
-  /* line 216, ../sass/screen.scss */
   0% {
     -moz-transform: translateY(-50px);
   }
-
-  /* line 217, ../sass/screen.scss */
   10%, 100% {
     -moz-transform: translateY(0px);
   }
 }
-
 @-webkit-keyframes slideUp {
-  /* line 220, ../sass/screen.scss */
   0% {
     -webkit-transform: translateY(0px);
   }
-
-  /* line 221, ../sass/screen.scss */
   10%, 100% {
     -webkit-transform: translateY(-50px);
   }
 }
-
 @-moz-keyframes slideUp {
-  /* line 224, ../sass/screen.scss */
   0% {
     -moz-transform: translateY(0px);
   }
-
-  /* line 225, ../sass/screen.scss */
   10%, 100% {
     -moz-transform: translateY(-50px);
   }
 }
-
 @keyframes slideUp {
-  /* line 228, ../sass/screen.scss */
   0% {
     -moz-transform: translateY(0px);
   }
-
-  /* line 229, ../sass/screen.scss */
   10%, 100% {
     -moz-transform: translateY(-50px);
   }

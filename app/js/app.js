@@ -14,6 +14,7 @@ config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/games', {templateUrl: 'partials/games.html', controller: 'GamesCtrl'});
 	$routeProvider.when('/about', {templateUrl: 'partials/about.html', controller: 'AboutCtrl'});
 	$routeProvider.when('/contact', {templateUrl: 'partials/contact.html', controller: 'ContactCtrl'});
+	$routeProvider.when('/dozen', {templateUrl: 'partials/dozen.html', controller: 'DozenCtrl'});
 
 	$routeProvider.otherwise({redirectTo: '/'});
 }]);
