@@ -40,12 +40,12 @@ angular.module('myApp.controllers', [])
 		var remainder = input % 12;
 		var divisor = 12;
 
-		var fraction = reduceFraction(remainder, divisor);
-		console.log("after", fraction);
+		if(remainder) {
+			var fraction = reduceFraction(remainder, divisor);
+			$scope.fraction = fraction[0] + " / " + fraction[1];
+		}
 
-		$scope.fraction = fraction[0] + " / " + fraction[1];
-
-		if (input > 12) {
+		if (input >= 12) {
 			$scope.whole = Math.floor(input/12);
 		}
 	}

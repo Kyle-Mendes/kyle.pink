@@ -4,7 +4,7 @@
 			<h1>
 				<span ng-if="whole">{{whole}}<span ng-if="whole && fraction"> and </span></span>
 				<span ng-if="fraction">{{fraction}} of a dozen<span ng-if="whole && fraction">,</span><span ng-if="! whole">.</span></span>
-				<span ng-if="whole"> dozen<span ng-show="whole > 1">s</span>.</span>
+				<span ng-if="whole"> dozen.</span>
 			</h1>
 			<h2 ng-if="! whole && ! fraction">Input the number you would like to convert to dozens.</h2>
 		</div>
