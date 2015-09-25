@@ -49,4 +49,10 @@ angular.module('myApp.controllers', [])
 			$scope.whole = Math.floor(input/12);
 		}
 	}
+}])
+.controller('GGCtrl', ['$scope', '$http', function($scope, $http) {
+	$http.get('http://gg.kyle.pink/games')
+		.then(function(response) {
+			console.log(response)
+		})
 }]);
