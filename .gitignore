@@ -7,8 +7,3 @@ build.xml
 .settings
 .idea/*
 .sass-cache
-
-app/games
-!app/games/libs
-
-
